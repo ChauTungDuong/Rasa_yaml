@@ -57,7 +57,12 @@ slots:
     influence_conversation: true
 
   nam:
-    type: text
+    type: categorical
+    values:
+      - "2022"
+      - "2023"
+      - "2024"
+      - "2025"
     mappings:
       - type: from_entity
         entity: nam
