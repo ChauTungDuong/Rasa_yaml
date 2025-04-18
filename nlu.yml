@@ -1,0 +1,545 @@
+version: "3.1"
+nlu:
+  - intent: chaoHoi
+    examples: |
+      - Chào ad ạ
+      - Xin chào
+      - Chào
+      - Chào buổi sáng
+      - Chào buổi tối
+      - Chào admin
+      - Em chào anh/chị
+      - Em chào thầy
+      - Chào chatbot
+      - Chào bot
+      - Có ai trả lời không
+      - Có ai không
+      - Hi
+      - Hello
+      - ê
+      - alo
+
+  - intent: tamBiet
+    examples: |
+      - Tạm biệt
+      - Hẹn gặp lại
+      - Chào nhé
+      - Bye
+      - Bye ad
+      - Goodbye
+      - Cảm ơn, chào tạm biệt
+      - Cảm ơn, tạm biệt
+      - Hẹn gặp lại sau
+      - Chúc anh/chị một ngày tốt lành
+      - Em cảm ơn, em chào ạ
+      - Thôi không hỏi nữa
+      - Kết thúc tại đây nhé
+      - Kết thúc
+      - Dừng trò chuyện 
+      - Dừng lại
+
+  - intent: camOn
+    examples: |
+      - Cảm ơn bạn
+      - Cảm ơn nhiều
+      - Cảm ơn thông tin nha
+      - Cảm ơn nha
+      - Cảm ơn anh/chị
+      - Rất cảm ơn
+      - Biết ơn lắm luôn
+      - Cảm ơn vì đã hỗ trợ
+      - Thanks
+      - Thank you
+      - Em cảm ơn ạ
+      - Cảm ơn vì câu trả lời
+      - Trân trọng cảm ơn
+      - Cảm ơn nhiều lắm
+      - Cảm ơn đã giải đáp
+      - Cảm ơn chatbot
+      - Cảm ơn rất nhiều
+
+  - intent: thongTinTongQuan
+    examples: |
+      - Cho em hỏi thông tin trường mình ạ
+      - Thông tin trường
+      - Thông tin KMA
+      - Cho biết về trường
+      - Thông tin về Học viện Kỹ thuật mật mã
+      - Thông tin về Học viện
+      - Thông tin Học viện
+      - Tổng quan về Học viện Kỹ thuật mật mã
+      - Tổng quan trường
+      - Tổng quan KMA
+      - Giới thiệu trường
+      - Giới thiệu Học viện
+      - Thông tin chung về KMA
+      - Thông tin KMA
+
+  - intent: dieuKienXetTuyen
+    examples: |
+      - Cho em hỏi điều kiện xét tuyển vào trường/học viện ạ
+      - Cho hỏi điều kiện xét tuyển
+      - Điều kiện để vào trường
+      - Cần gì để vào trường
+      - Điều kiện xét tuyển vào học viện
+      - Điều kiện xét tuyển
+      - Cần gì để xét vào trường
+      - ĐK xét tuyển
+      - Điều kiện
+
+  - intent: tuyenSinhTheoNam
+    examples: |
+      - Cho em hỏi thông tin tuyển sinh năm [2025](nam)
+      - Tuyển sinh năm [2025](nam) có gì mới?
+      - Năm [2024](nam) trường có tuyển sinh không?
+      - Trường tuyển sinh như thế nào vào năm [2025](nam)?
+      - Thông tin tuyển sinh năm [2025](nam)
+      - Tuyển sinh năm [2023](nam) điểm chuẩn bao nhiêu?
+      - Tôi muốn hỏi về tuyển sinh năm [2024](nam)
+      - Cho em hỏi năm [2025](nam) có thay đổi gì trong xét tuyển?
+      - Tuyển sinh [2022](nam) gồm những phương thức nào?
+      - Thông tin tuyển sinh năm ngoái
+      - Thông tin tuyển sinh năm kia
+
+  - intent: phuongThucXetTuyen
+    examples: |
+      - Cho em hỏi các phương thức xét tuyển vào trường
+      - Các phương thức xét tuyển của trường
+      - Có bao nhiêu phương thức xét tuyển
+      - Thông tin các phương thức xét tuyển
+      - Phương thức xét tuyển
+      - Có những cách xét tuyển nào
+      - Xét tuyển theo phương thức nào
+      - Xét tuyển cách nào
+      - Xét tuyển
+      - Có những phương thức tuyển sinh nào
+      - Phương thức tuyển sinh
+
+  - intent: cacNganhDaoTao
+    examples: |
+      - Cho em hỏi trường có những ngành đào tạo nào ạ
+      - Những ngành đào tạo của học viện là gì
+      - Các ngành đào tạo
+      - Ngành đào tạo chính
+      - Trường có những ngành gì 
+      - Số ngành đào tạo
+      - Trường dạy ngành gì
+      - KMA đào tạo ngành gì
+      - Ngành đào tạo
+      - Các ngành của trường
+      - Ngoài [ATTT](nganh) còn những ngành gì nữa
+
+  - intent: thongTinNganh
+    examples: |
+      - Giới thiệu về ngành [ATTT](nganh)
+      - Cho hỏi thông tin ngành [attt](nganh)
+      - Ngành [an toàn thông tin](nganh) học gì
+      - Ngành [cntt](nganh)
+      - Ngành [attt](nganh)
+      - Ngành [dtvt](nganh) 
+      - Ngành [CNTT](nganh) 
+      - Cho em biết về ngành [công nghệ thông tin](nganh)
+      - Thông tin ngành [điện tử viễn thông](nganh)
+      - Ngành [ĐTVT](nganh) là gì
+      - Cho hỏi thông tin ngành [cntt](nganh)
+      - Cho hỏi thông tin ngành [dtvt](nganh)
+      - Chi tiết ngành [An toàn thông tin](nganh)
+      - Chi tiết ngành [Công nghệ thông tin](nganh)
+      - Chi tiết ngành [Điện tử viễn thông](nganh)
+
+  - intent: chuongTrinhHoc
+    examples: |
+      - Chương trình học ngành [ATTT](nganh) như thế nào
+      - Ngành [CNTT](nganh) học những môn gì
+      - Chương trình đào tạo của ngành [công nghệ thông tin](nganh)
+      - Chương trình học ngành [CNTT](nganh) 
+      - Chương trình đào tạo ngành [DTVT](nganh)
+      - Cho em hỏi lộ trình học [An toàn thông tin](nganh)
+      - Cho em hỏi lộ trình học [Công nghệ thông tin](nganh)
+      - Cho em hỏi lộ trình học [Điện tử viễn thông](nganh)
+      - Đào tạo [Điện tử viễn thông](nganh) gồm những gì
+      - Chi tiết đào tạo [Công nghệ thông tin](nganh)
+
+  - intent: hocPhi
+    examples: |
+      - Học phí trường mình bao nhiêu?
+      - Cho em hỏi học phí một năm là bao nhiêu?
+      - Học phí có cao không?
+      - Học phí ngành [An toàn thông tin](nganh) là bao nhiêu?
+      - Mỗi kỳ học phí khoảng bao nhiêu tiền?
+      - Có học phí khác nhau giữa các ngành không?
+      - Trường có hỗ trợ giảm học phí không?
+      - Học phí có tăng theo từng năm không?
+      - Bao nhiêu tiền một tín chỉ?
+      - Tổng chi phí học đại học là bao nhiêu?
+      - Học phí có thể đóng theo từng kỳ không?
+      - Học phí năm 2025 có thay đổi không?
+      - Học phí có bao gồm các khoản phụ khác không?
+      - Trường có miễn học phí cho sinh viên giỏi không?
+      - Cho em xin thông tin chi tiết về học phí nhé
+
+  - intent: hocBong
+    examples: |
+      - Trường có học bổng không?
+      - Làm sao để nhận học bổng?
+      - Học bổng dành cho sinh viên giỏi là gì?
+      - Có học bổng cho sinh viên nghèo vượt khó không?
+      - Điều kiện nhận học bổng là gì?
+      - Có mấy loại học bổng?
+      - Học bổng có theo từng năm không?
+      - Có học bổng toàn phần không?
+      - Học bổng trị giá bao nhiêu?
+      - Học bổng có dành cho năm nhất không?
+      - Trường có học bổng du học không?
+      - Học bổng cần GPA bao nhiêu?
+      - Có xét học bổng theo điểm rèn luyện không?
+      - Học bổng có áp dụng cho tất cả ngành không?
+      - Xin thông tin học bổng năm nay
+
+  - intent: kyTucXa
+    examples: |
+      - Trường có ký túc xá không?
+      - Ký túc xá ở đâu?
+      - Phí ở ký túc xá là bao nhiêu?
+      - Ký túc xá có bao nhiêu chỗ?
+      - Điều kiện vào ký túc xá là gì?
+      - Có thể đăng ký ký túc xá online không?
+      - Ký túc xá có wifi không?
+      - Phòng ký túc xá có máy lạnh không?
+      - Mỗi phòng bao nhiêu người?
+      - Có ký túc xá cho nữ không?
+      - Ký túc xá có an toàn không?
+      - Có căng tin trong ký túc xá không?
+      - Ký túc xá gần trường không?
+      - Có camera an ninh không?
+      - Ký túc xá có sạch sẽ không?
+
+  - intent: cauLacBo
+    examples: |
+      - Trường có những câu lạc bộ nào?
+      - Em muốn tham gia câu lạc bộ, làm sao đăng ký?
+      - Có CLB học thuật không?
+      - Có CLB thể thao nào không?
+      - CLB sinh viên hoạt động như thế nào?
+      - Có CLB công nghệ thông tin không?
+      - CLB thường sinh hoạt vào thời gian nào?
+      - Có tuyển thành viên câu lạc bộ không?
+      - Các CLB có thu phí không?
+      - Có bao nhiêu CLB ở trường?
+      - CLB có được hỗ trợ từ trường không?
+      - CLB nào nổi bật nhất?
+      - Em muốn tham gia CLB
+
+  - intent: tiengAnhDauVao
+    examples: |
+      - Trường có kiểm tra tiếng Anh đầu vào không?
+      - Em cần chứng chỉ tiếng Anh gì để vào học?
+      - Có yêu cầu đầu vào về tiếng Anh không?
+      - Thi đầu vào tiếng Anh là bắt buộc không?
+      - Cần TOEIC hay IELTS để vào trường không?
+      - Trường có lớp tiếng Anh tăng cường không?
+      - Đầu vào tiếng Anh có khó không?
+      - Em yếu tiếng Anh thì có học được không?
+      - Trường có hỗ trợ ôn tiếng Anh đầu vào không?
+      - Đầu vào có phân lớp tiếng Anh không?
+      - Có miễn thi tiếng Anh đầu vào nếu có chứng chỉ không?
+      - Em chưa giỏi tiếng Anh có bị ảnh hưởng không?
+      - Có khóa học tiếng Anh miễn phí không?
+      - Chứng chỉ tiếng Anh có cần thiết không?
+      - Bao giờ kiểm tra đầu vào tiếng Anh?
+
+  - intent: coHoiViecLam
+    examples: |
+      - Cơ hội việc làm sau khi tốt nghiệp thế nào?
+      - Trường có hỗ trợ sinh viên tìm việc không?
+      - Tỷ lệ có việc làm sau tốt nghiệp là bao nhiêu?
+      - Trường có liên kết với công ty nào không?
+      - Có ngày hội việc làm không?
+      - Sinh viên thường làm ở đâu sau khi ra trường?
+      - Việc làm ngành CNTT có nhiều không?
+      - Ngành ATTT ra có dễ xin việc không?
+      - Trường có hợp tác với doanh nghiệp không?
+      - Trường có chương trình thực tập không?
+      - Sinh viên có được giới thiệu việc làm không?
+      - Có nhiều bạn làm cho tập đoàn lớn không?
+      - Em muốn đi làm sớm, trường có hỗ trợ không?
+      - Việc làm sau khi tốt nghiệp có ổn định không?
+      - Học ngành này dễ ra nước ngoài không?
+
+  - intent: coPhaiTruongQuanDoiKhong
+    examples: |
+      - Trường có phải trường quân đội không?
+      - Có bắt buộc mặc đồng phục quân đội không?
+      - Trường thuộc Bộ Quốc Phòng à?
+      - Em không muốn học quân đội thì có sao không?
+      - Có học quân sự nhiều không?
+      - Trường có rèn luyện như quân đội không?
+      - Học ở trường có giống học sĩ quan không?
+      - Trường có bắt buộc nội trú không?
+      - Em nghe nói trường là của quân đội?
+      - Em sợ môi trường quân sự quá
+      - Có bị cắt tóc ngắn không?
+      - Có dạy võ không?
+      - Trường có phải thi thể lực không?
+      - Có phân biệt sinh viên dân sự và quân sự không?
+      - Em là nữ, có bị huấn luyện quân sự không?
+      - Có được cấp quân hàm sau khi học không
+      - Có được vào nhà nước sau khi học không
+
+  - intent: diemChuanCacNam
+    examples: |
+      - Cho mình hỏi điểm chuẩn các năm gần đây
+      - Học viện các năm lấy bao nhiêu điểm?
+      - Điểm chuẩn các năm thế nào?
+      - Học viện có điểm chuẩn thay đổi qua các năm không?
+      - Tình hình điểm chuẩn các năm ra sao?
+      - Cho mình xem điểm chuẩn qua từng năm
+      - Điểm tuyển sinh của học viện qua các năm
+      - Học viện mấy năm gần đây lấy điểm bao nhiêu?
+      - Mình muốn biết điểm chuẩn của học viện các năm
+      - Điểm chuẩn từng năm của học viện là bao nhiêu?
+      - Các năm trước điểm có cao không?
+      - Học viện thay đổi điểm chuẩn như thế nào các năm qua?
+      - Bạn có thể nói sơ về điểm chuẩn các năm không?
+      - Học viện lấy điểm thế nào theo từng năm?
+      - Cho mình cái tổng hợp điểm chuẩn học viện qua các năm
+
+  - intent: diemChuanTheoNam
+    examples: |
+      - Điểm chuẩn năm [2022](nam) là bao nhiêu?
+      - Cho mình hỏi điểm chuẩn năm [2023](nam)
+      - Năm [2024](nam) lấy bao nhiêu điểm vậy?
+      - Bạn có biết điểm chuẩn của năm [2022](nam) không?
+      - Năm [2023](nam) trường lấy điểm chuẩn như thế nào?
+      - Mình muốn xem điểm chuẩn năm [2024](nam)
+      - Điểm chuẩn trường năm [2022](nam)
+      - Năm [2023](nam) ngành nào lấy cao nhất?
+      - Cho hỏi điểm chuẩn các ngành năm [2024](nam)
+      - Điểm tuyển sinh năm [2023](nam) là bao nhiêu?
+      - Điểm đậu vào trường năm [2022](nam)
+      - Điểm chuẩn đại học năm [2024](nam) là bao nhiêu vậy?
+      - Trường có điểm chuẩn năm [2023](nam) không?
+      - Năm [2022](nam) điểm có cao không?
+      - Điểm chuẩn năm [2025](nam) là bao nhiêu?
+
+  - intent: diemChuanTheoNganh
+    examples: |
+      - Điểm chuẩn ngành [ATTT](nganh) năm nay là bao nhiêu?
+      - Ngành [CNTT](nganh) lấy bao nhiêu điểm?
+      - Cho mình biết điểm ngành [DTVT](nganh)
+      - Điểm ngành [ATTT](nganh) năm ngoái là bao nhiêu?
+      - Ngành [CNTT](nganh) cần bao nhiêu điểm để đậu?
+      - Cho tôi biết điểm chuẩn của ngành [DTVT](nganh)
+      - Năm nay ngành [CNTT](nganh) có điểm chuẩn bao nhiêu?
+      - Ngành [ATTT](nganh) lấy điểm cao không?
+      - Điểm chuẩn chính thức của ngành [DTVT](nganh) là bao nhiêu?
+      - Tôi muốn biết điểm chuẩn ngành [CNTT](nganh)
+      - Ngành [ATTT](nganh) năm nay lấy điểm bao nhiêu vậy?
+      - Học ngành [DTVT](nganh) thì cần bao nhiêu điểm?
+
+  - intent: webVaFacebook_KMA
+    examples: |
+      - Website chính thức của trường là gì?
+      - Trường có fanpage Facebook không?
+      - Cho em link website của trường với
+      - Em muốn biết fanpage tuyển sinh chính thức
+      - Facebook của Học viện Kỹ thuật Mật mã là gì?
+      - Trường có Zalo không?
+      - Em cần link web để tìm thông tin chính xác
+      - Fanpage Facebook nào là đúng của trường?
+      - Trường có kênh TikTok không?
+      - Em muốn theo dõi thông tin mới nhất
+      - Website trường có gì không?
+      - Facebook trường có trả lời tin nhắn không?
+      - Có nên liên hệ qua web hay Facebook?
+      - Link tuyển sinh trường là gì?
+      - Trường có group Facebook cho tân sinh viên không?
+
+  - intent: hocCoKhoKhong
+    examples: |
+      - Trường(truong) học có khó không ạ
+      - Em thấy bảo thể chất khó lắm
+      - Chương trình học nặng không?
+      - Có phải học nhiều không?
+      - Học có áp lực không?
+      - Ngành này có khó học không?
+      - Có dễ bị đuổi học không?
+      - Em nghe nói năm nhất học nặng lắm
+      - Học đại học có giống cấp 3 không?
+      - Môn học nhiều không?
+      - Có phải học đêm nhiều không?
+      - Học có bị kiểm tra liên tục không?
+      - Em học trung bình có theo được không?
+      - Có ai rớt năm nhất không?
+      - Có phải học Toán nhiều không?
+
+  - intent: maNganh
+    examples: |
+      - Cho em hỏi mã ngành của ATTT(nganh) ạ
+      - Cho em hỏi mã ngành của [ATTT](nganh) ạ
+      - Mã ngành [CNTTklkl](nganh) là gì?
+      - Ngành [DTVT](nganh) có mã số bao nhiêu?
+      - Mã ngành của trường là gì?
+      - Em cần mã ngành để điền vào nguyện vọng
+      - Mã ngành xét tuyển là gì?
+      - Mã ngành học của KMA là gì?
+      - Có bao nhiêu mã ngành?
+      - Trường có mấy mã ngành?
+      - Mã ngành của các ngành đào tạo là gì?
+      - Cho xin mã ngành các ngành học
+      - Cần nhập mã ngành khi đăng ký đúng không?
+      - Có thể cho em bảng mã ngành không?
+      - Mã ngành [Công nghệ thông tin](nganh)?
+      - Mã ngành năm 2025 có thay đổi không?
+
+  - intent: chuanBiGiKhiNhapHoc
+    examples: |
+      - Khi nhập học cần chuẩn bị gì?
+      - Em cần mang theo giấy tờ gì khi nhập học?
+      - Nhập học có cần mang ảnh không?
+      - Em có cần chứng minh nhân dân không?
+      - Cần chuẩn bị những gì cho buổi nhập học?
+      - Có cần mang học bạ bản gốc không?
+      - Em cần đóng học phí trước không?
+      - Khi nhập học cần điền form nào không?
+      - Có phải khám sức khỏe khi nhập học không?
+      - Cần nộp bản sao giấy khai sinh không?
+      - Nhập học online hay offline?
+      - Có cần in giấy báo trúng tuyển không?
+      - Có phải xác nhận nhập học không?
+
+  - intent: cachTinhGPA
+    examples: |
+      - GPA trường mình tính như thế nào ạ
+      - Cách tính GPA
+      - GPA là gì vậy?
+      - Làm sao để biết GPA?
+      - GPA khác điểm trung bình không?
+      - Có bảng quy đổi GPA không?
+      - GPA tối đa là bao nhiêu?
+      - Tính GPA theo hệ mấy?
+      - GPA được tính từng kỳ hay cả năm?
+      - GPA ảnh hưởng đến học bổng không?
+      - GPA tính theo tín chỉ đúng không?
+      - Môn tự chọn có tính vào GPA không?
+      - Trường có dùng GPA hệ 4.0 không?
+
+  - intent: cachXetHocLuc
+    examples: |
+      - Học lực được xét như thế nào ạ
+      - Bao nhiêu điểm thì được khá ạ
+      - Bao nhiêu điểm thì được giỏi ạ
+      - Bao nhiêu điểm thì được xuất sắc ạ
+      - Thế nào là học lực trung bình?
+      - Điểm GPA bao nhiêu thì được học lực giỏi?
+      - Có phân loại học lực không?
+      - Học lực tính theo từng kỳ hay cả năm?
+      - GPA 3.6 là loại gì?
+      - GPA 3.0 là loại gì?
+      - GPA bao nhiêu là giỏi?
+      - Có cách nào cải thiện học lực không?
+      - Xếp loại học lực cuối khóa như thế nào?
+      - Học lực có quan trọng không?
+
+  - intent: toHopMon
+    examples: |
+      - Các tổ hợp môn xét tuyển là gì?
+      - Trường xét tuyển theo những tổ hợp nào?
+      - Em muốn biết các tổ hợp môn để đăng ký
+      - Những môn nào được dùng để xét tuyển vào trường?
+      - Có tổ hợp A00 không?
+      - Trường có xét khối D01 không?
+      - Em học ban tự nhiên thì có tổ hợp nào phù hợp?
+      - Các ngành có tổ hợp môn xét tuyển khác nhau không?
+      - Cho em xin danh sách tổ hợp môn của từng ngành
+      - Các tổ hợp nào phổ biến ở trường Kỹ thuật Mật mã?
+      - Trường có xét tổ hợp khối A01 không?
+      - Ngành CNTT xét những tổ hợp môn nào?
+      - Ngành ATTT có tổ hợp môn gì?
+      - Xét tuyển có tổ hợp môn Tiếng Anh không?
+      - Tổ hợp môn năm nay có gì thay đổi không?
+
+  - intent: uuTienXetTuyen
+    examples: |
+      - Trường có ưu tiên gì trong xét tuyển không?
+      - Em thuộc diện ưu tiên thì được cộng bao nhiêu điểm?
+      - Các khu vực ưu tiên được tính thế nào?
+      - Học sinh miền núi có được cộng điểm không?
+      - Ưu tiên khu vực năm nay ra sao?
+      - Diện chính sách có được hỗ trợ gì không?
+      - Trường có ưu tiên tuyển thẳng học sinh giỏi không?
+      - Có xét tuyển thẳng cho học sinh giỏi quốc gia không?
+      - Em là con liệt sĩ thì có ưu tiên không?
+      - Em có chứng nhận học sinh giỏi cấp tỉnh thì được cộng điểm chứ?
+      - Ưu tiên xét tuyển như thế nào?
+      - Trường có xét tuyển riêng cho học sinh giỏi không?
+      - Em thuộc diện ưu tiên 1 thì có lợi gì?
+      - Ưu tiên khu vực và đối tượng được tính ra sao?
+
+  - intent: chungChiTA
+    examples: |
+      - Có cần chứng chỉ tiếng Anh không?
+      - Trường yêu cầu chứng chỉ tiếng Anh đầu vào chứ?
+      - Em có IELTS thì có được ưu tiên không?
+      - Trường có miễn học tiếng Anh nếu có chứng chỉ không?
+      - IELTS bao nhiêu thì được công nhận?
+      - TOEIC có được chấp nhận không?
+      - Trường có yêu cầu tiếng Anh khi xét tuyển không?
+      - Có cần có bằng tiếng Anh để tốt nghiệp không?
+      - Chứng chỉ tiếng Anh có giúp xét tuyển không?
+      - Có thể thay thế điểm thi bằng chứng chỉ tiếng Anh không?
+      - Những chứng chỉ tiếng Anh nào được công nhận?
+      - Em có cần nộp chứng chỉ ngoại ngữ không?
+
+  - intent: coTuyenHeQuanKhong
+    examples: |
+      - Trường có đào tạo hệ quân sự không?
+      - Em muốn học hệ quân đội, trường có tuyển không?
+      - Có hệ quân đội không?
+      - Trường có phải là trường quân đội không?
+      - Có tuyển sinh hệ quân sự không?
+      - Có ngành nào đào tạo cho quân đội không?
+      - Hệ quân sự khác gì với hệ dân sự?
+      - Em muốn biết có hệ quân sự không?
+      - Có tiêu chuẩn riêng cho hệ quân sự không?
+      - Trường có liên kết với Bộ Quốc phòng không?
+      - Trường có đào tạo sĩ quan không?
+      - Đăng ký hệ quân sự cần làm gì?
+      - Trường có tổ chức tuyển sinh riêng cho quân đội không?
+
+synonyms:
+  trường:
+    - Học viện
+    - hv
+    - KMA
+    - Học viện Kỹ thuật mật mã
+    - trường mình
+
+  ATTT:
+    - An toàn thông tin
+    - attt
+    - An toàn
+    - AT
+
+  CNTT:
+    - Công nghệ thông tin
+    - cntt
+    - IT
+    - CT
+    - Công nghệ
+
+  DTVT:
+    - ĐTVT
+    - Điện tử
+    - DT
+    - dtvt
+    - Điện tử viễn thông
+
+  "2025":
+    - Năm nay
+
+  "2024":
+    - Năm ngoái
+
+  "2023":
+    - Năm kia

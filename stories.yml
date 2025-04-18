@@ -1,0 +1,243 @@
+version: "3.1"
+stories:
+  - story: Người dùng chào hỏi
+    steps:
+      - intent: chaoHoi
+      - action: utter_chaoHoi
+
+  - story: Người dùng tạm biệt
+    steps:
+      - intent: tamBiet
+      - action: utter_tamBiet
+
+  - story: Người dùng cảm ơn
+    steps:
+      - intent: camOn
+      - action: utter_camOn
+
+  - story: Người dùng hỏi thông tin tổng quan
+    steps:
+      - intent: thongTinTongQuan
+      - action: utter_thongTinTongQuan
+
+  - story: Người dùng hỏi điều kiện xét tuyển
+    steps:
+      - intent: dieuKienXetTuyen
+      - action: utter_dieuKienXetTuyen
+
+  - story: Người dùng hỏi tuyển sinh năm 2022
+    steps:
+      - intent: tuyenSinhTheoNam
+        entities:
+          - nam: "2022"
+      - action: utter_tuyenSinhNam2022
+  - story: Người dùng hỏi tuyển sinh năm 2023
+    steps:
+      - intent: tuyenSinhTheoNam
+        entities:
+          - nam: "2023"
+      - action: utter_tuyenSinhNam2023
+  - story: Người dùng hỏi tuyển sinh năm 2024
+    steps:
+      - intent: tuyenSinhTheoNam
+        entities:
+          - nam: "2024"
+      - action: utter_tuyenSinhNam2024
+  - story: Người dùng hỏi tuyển sinh năm 2025
+    steps:
+      - intent: tuyenSinhTheoNam
+        entities:
+          - nam: "2025"
+      - action: utter_tuyenSinhNam2025
+
+  - story: Người dùng hỏi điểm chuẩn các năm
+    steps:
+      - intent: diemChuanCacNam
+      - action: utter_diemChuanCacNam
+
+  - story: Người dùng hỏi điểm chuẩn năm 2022
+    steps:
+      - intent: diemChuanTheoNam
+        entities:
+          - nam: "2022"
+      - action: utter_diemChuanNam2022
+  - story: Người dùng hỏi điểm chuẩn năm 2023
+    steps:
+      - intent: diemChuanTheoNam
+        entities:
+          - nam: "2023"
+      - action: utter_diemChuanNam2023
+  - story: Người dùng hỏi điểm chuẩn năm 2024
+    steps:
+      - intent: diemChuanTheoNam
+        entities:
+          - nam: "2024"
+      - action: utter_diemChuanNam2024
+  - story: Người dùng hỏi điểm chuẩn năm 2025
+    steps:
+      - intent: diemChuanTheoNam
+        entities:
+          - nam: "2025"
+      - action: utter_diemChuanNam2025
+  - story: Người dùng hỏi điểm chuẩn ngành ATTT
+    steps:
+      - intent: diemChuanTheoNganh
+        entities:
+          - nganh: ATTT
+      - action: utter_diemChuanNganhATTT
+
+  - story: Người dùng hỏi điểm chuẩn ngành CNTT
+    steps:
+      - intent: diemChuanTheoNganh
+        entities:
+          - nganh: CNTT
+      - action: utter_diemChuanNganhCNTT
+
+  - story: Người dùng hỏi điểm chuẩn ngành DTVT
+    steps:
+      - intent: diemChuanTheoNganh
+        entities:
+          - nganh: DTVT
+      - action: utter_diemChuanNganhDTVT
+
+  - story: Người dùng hỏi phương thức xét tuyển
+    steps:
+      - intent: phuongThucXetTuyen
+      - action: utter_phuongThucXetTuyen
+
+  - story: Trả lời câu hỏi về các ngành đào tạo
+    steps:
+      - intent: cacNganhDaoTao
+      - action: utter_cacNganhDaoTao
+
+  - story: thông tin ngành ATTT
+    steps:
+      - intent: thongTinNganh
+        entities:
+          - nganh: ATTT
+      - action: utter_thongTinNganh_ATTT
+
+  - story: thông tin ngành CNTT
+    steps:
+      - intent: thongTinNganh
+        entities:
+          - nganh: CNTT
+      - action: utter_thongTinNganh_CNTT
+
+  - story: thông tin ngành DTVT
+    steps:
+      - intent: thongTinNganh
+        entities:
+          - nganh: DTVT
+      - action: utter_thongTinNganh_DTVT
+
+  - story: chương trình học ATTT
+    steps:
+      - intent: chuongTrinhHoc
+        entities:
+          - nganh: ATTT
+      - action: utter_chuongTrinhHoc_ATTT
+
+  - story: chương trình học CNTT
+    steps:
+      - intent: chuongTrinhHoc
+        entities:
+          - nganh: CNTT
+      - action: utter_chuongTrinhHoc_CNTT
+
+  - story: chương trình học DTVT
+    steps:
+      - intent: chuongTrinhHoc
+        entities:
+          - nganh: DTVT
+      - action: utter_chuongTrinhHoc_DTVT
+
+  - story: Người dùng hỏi học phí
+    steps:
+      - intent: hocPhi
+      - action: utter_hocPhi
+
+  - story: Người dùng hỏi học bổng
+    steps:
+      - intent: hocBong
+      - action: utter_hocBong
+
+  - story: Người dùng hỏi ký túc xá
+    steps:
+      - intent: kyTucXa
+      - action: utter_kyTucXa
+
+  - story: Người dùng hỏi câu lạc bộ
+    steps:
+      - intent: cauLacBo
+      - action: utter_cauLacBo
+
+  - story: Người dùng hỏi tiếng Anh đầu vào
+    steps:
+      - intent: tiengAnhDauVao
+      - action: utter_tiengAnhDauVao
+
+  - story: Người dùng hỏi cơ hội việc làm
+    steps:
+      - intent: coHoiViecLam
+      - action: utter_coHoiViecLam
+
+  - story: Người dùng hỏi trường có phải quân đội không
+    steps:
+      - intent: coPhaiTruongQuanDoiKhong
+      - action: utter_coPhaiTruongQuanDoiKhong
+
+  - story: Người dùng hỏi điểm chuẩn các năm
+    steps:
+      - intent: diemChuanCacNam
+      - action: utter_diemChuanCacNam
+
+  - story: Người dùng hỏi web và fanpage
+    steps:
+      - intent: webVaFacebook_KMA
+      - action: utter_webVaFacebook_KMA
+
+  - story: Người dùng hỏi học có khó không
+    steps:
+      - intent: hocCoKhoKhong
+      - action: utter_hocCoKhoKhong
+
+  - story: Người dùng hỏi mã ngành
+    steps:
+      - intent: maNganh
+      - action: utter_maNganh
+
+  - story: Người dùng hỏi chuẩn bị gì khi nhập học
+    steps:
+      - intent: chuanBiGiKhiNhapHoc
+      - action: utter_chuanBiGiKhiNhapHoc
+
+  - story: Người dùng hỏi cách tính GPA
+    steps:
+      - intent: cachTinhGPA
+      - action: utter_cachTinhGPA
+
+  - story: Người dùng hỏi cách xét học lực
+    steps:
+      - intent: cachXetHocLuc
+      - action: utter_cachXetHocLuc
+
+  - story: Người dùng hỏi tổ hợp môn xét tuyển
+    steps:
+      - intent: toHopMon
+      - action: utter_toHopMon
+
+  - story: Người dùng hỏi chính sách ưu tiên xét tuyển
+    steps:
+      - intent: uuTienXetTuyen
+      - action: utter_uuTienXetTuyen
+
+  - story: Người dùng hỏi về chứng chỉ tiếng Anh
+    steps:
+      - intent: chungChiTA
+      - action: utter_chungChiTA
+
+  - story: Người dùng hỏi về hệ quân sự
+    steps:
+      - intent: coTuyenHeQuanKhong
+      - action: utter_coTuyenHeQuanKhong
